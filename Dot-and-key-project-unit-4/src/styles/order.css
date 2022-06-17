@@ -2,11 +2,11 @@
     background-color:#FBFBFB
 }
 
-h2{
-  animation: text 3s 1;
+h4{
+  animation: texts 3s 1;
 }
 
-@keyframes text {
+@keyframes texts {
     0%{
         color: green ;
         margin-bottom: 30px;

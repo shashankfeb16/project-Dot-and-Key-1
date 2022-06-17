@@ -84,7 +84,7 @@ const Login = () => {
         >
           <Stack spacing={8} mx={"auto"} maxW={"lg"} py={12} px={6}>
             <Stack align={"center"}>
-              <Heading fontSize={"4xl"}>Login</Heading>
+              <Heading fontSize={"4xl"} style={{textDecoration: "none"}}>Login</Heading>
               <Center p={8} style={{ marginBottom: "-55px", width: "400px" }}>
                 <Button
                   style={{
@@ -99,7 +99,7 @@ const Login = () => {
                 >
                   <Center>
                     <a href="https://www.facebook.com/login.php">
-                      <Text style={{ color: "white" }}>
+                      <Text style={{ color: "white",backgroundColor: "#4267B2" }}>
                         Continue with Facebook
                       </Text>
                     </a>
@@ -118,7 +118,7 @@ const Login = () => {
                 >
                   <Center>
                     <a href="https://myaccount.google.com/">
-                      <Text style={{ color: "white" }}>
+                      <Text style={{ color: "white",backgroundColor: "#dd4b39"  }}>
                         Continue with Google
                       </Text>
                     </a>

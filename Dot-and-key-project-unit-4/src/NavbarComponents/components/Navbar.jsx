@@ -22,7 +22,7 @@ import { useCart } from "react-use-cart";
 import Cart from '../../pages/Cart';
 import { useNavigate } from 'react-router-dom';
 import {Link} from "react-router-dom" 
-
+import 'swiper/css';
 
 
 const Navbar = () => {
@@ -65,13 +65,14 @@ const Navbar = () => {
           backgroundColor:"#51514B",
           color:"#fff",
           aspectRatio:"auto",
-          height:"18px"
+          height:"18px",
+          
         }}
       >
-        <SwiperSlide style={{fontSize:"12px"}}>3% OFF ON PREPAID ORDERS</SwiperSlide>
-        <SwiperSlide style={{fontSize:"12px"}}>BUY 2 GET 2 MINIS FREE</SwiperSlide>
-        <SwiperSlide style={{fontSize:"12px"}}>UPTO 20% OFF SITEWIDE</SwiperSlide>
-        <SwiperSlide style={{fontSize:"12px"}}>NEW LAUNCH:20% VITAMIN SERUM</SwiperSlide>
+        <SwiperSlide style={{fontSize:"12px",backgroundColor:"#51514B"}}>3% OFF ON PREPAID ORDERS</SwiperSlide>
+        <SwiperSlide style={{fontSize:"12px",backgroundColor:"#51514B"}}>BUY 2 GET 2 MINIS FREE</SwiperSlide>
+        <SwiperSlide style={{fontSize:"12px",backgroundColor:"#51514B"}}>UPTO 20% OFF SITEWIDE</SwiperSlide>
+        <SwiperSlide style={{fontSize:"12px",backgroundColor:"#51514B"}}>NEW LAUNCH:20% VITAMIN SERUM</SwiperSlide>
       </Swiper>
 
 
@@ -92,11 +93,11 @@ const Navbar = () => {
     height:"40%",
     width:"100%",
     boxShadow: "rgba(0, 0, 0, 0.25) 0px 25px 50px -12px",
-    aspectRatio:"auto",
+    aspectRatio:"auto",zIndex:"12"
           }
         }}
         className={styled.modal}>
-       <div style={{overflowY: 'scroll',paddingLeft:"35px"}}>
+       <div style={{overflowY: 'scroll',paddingLeft:"35px",fontSize:"18px"}}>
       
        <a href="#" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>WHAT'S NEW</h3></a>
 
