@@ -33,10 +33,13 @@ const Haircare = ({ haircare }) => {
                     }}
                     navigation={true}
                     modules={[Autoplay, Pagination, Navigation]}
+                    style={{
+                        width:"100%"
+                    }}
                 >
                     <SwiperSlide className={styles.bhcarousel1image}>
                         <img
-                            style={{ borderRadius: "20px", height: "632px", width: "1520px" }}
+                            style={{ borderRadius: "20px", height: "632px", width: "100%" }}
                             src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Untitled-1_13.png?v=1647427657"
                             alt="a"
                         />
@@ -44,7 +47,7 @@ const Haircare = ({ haircare }) => {
                     <SwiperSlide className={styles.bhcarousel1image}>
                         a
                         <img
-                            style={{ borderRadius: "20px", height: "632px", width: "1520px" }}
+                            style={{ borderRadius: "20px", height: "632px", width: "100%" }}
                             src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/1b_2.png?v=1646731308"
                             alt="b"
                         />
@@ -52,10 +55,14 @@ const Haircare = ({ haircare }) => {
                 </Swiper>
             </div>
             <div>
-                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/desk_14.png?v=1653897203" alt="" />
+                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/desk_14.png?v=1653897203" alt="" style={{
+                    width: "100%"
+                }} />
             </div>
             <div>
-                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Untitled-2_1_dd2b4fbc-12e8-4b8d-9675-2df8fc72dbd9.png?v=1642769314" alt="" />
+                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Untitled-2_1_dd2b4fbc-12e8-4b8d-9675-2df8fc72dbd9.png?v=1642769314" alt="" style={{
+                    width: "100%"
+                }}/>
             </div>
             <div className={styles.card}>
                 <Card style={{ width: '18rem' }}>
@@ -80,8 +87,8 @@ const Haircare = ({ haircare }) => {
             <br />
             <br />
             <div>
-                <h5>THE SCIENCE BEHIND</h5>
-                <h1>Our Formulations</h1>
+                <h5 style={{width: '100%', textAlign: 'center'}}><strong>THE SCIENCE BEHIND</strong></h5>
+                <h1><strong>Our Formulations</strong></h1>
                 <p>Our Formulations are 90% nature derived, with our focus being the use of scientifically-proven ingredients that ensure promised results.
                 </p>
             </div>
@@ -203,7 +210,7 @@ const Haircare = ({ haircare }) => {
             <br />
             <br />
             <div>
-                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/7_31dec0fe-d522-47b7-96c4-da0c99724f9b.png?v=1642768426" alt="" />
+                <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/7_31dec0fe-d522-47b7-96c4-da0c99724f9b.png?v=1642768426" alt="" style={{width:"100%"}}/>
             </div>
         </div>
     )
