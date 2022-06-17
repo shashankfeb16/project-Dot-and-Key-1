@@ -20,6 +20,7 @@ import {
 } from '@chakra-ui/react'
 import { useCart } from "react-use-cart";
 import Cart from '../../pages/Cart';
+import { Link } from 'react-router-dom';
 
 
 
@@ -95,29 +96,29 @@ const Navbar = () => {
         className={styled.modal}>
        <div style={{overflowY: 'scroll',paddingLeft:"35px"}}>
       
-       <a href="#" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>WHAT'S NEW</h3></a>
+       <Link to="/" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>WHAT'S NEW</h3></Link>
 
-        <a href="#" style={{textDecoration: "none",color:"#DD73A2"}}><h3 style={{fontWeight:"400"}}>TOP SUMMER PICKS</h3></a>
+        <Link to="/" style={{textDecoration: "none",color:"#DD73A2"}}><h3 style={{fontWeight:"400"}}>TOP SUMMER PICKS</h3></Link>
         
-        <a href="#" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>BEST SELLERS</h3></a>
+        <Link to="/" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>BEST SELLERS</h3></Link>
         
-        <a href="#" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>SHOP BY INGREDIENTS</h3></a>
+        <Link to="/" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>SHOP BY INGREDIENTS</h3></Link>
         
-        <a href="#" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>SHOP BY CONCERN</h3></a>
+        <Link to="/" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>SHOP BY CONCERN</h3></Link>
 
-        <a href="#" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>SHOP ALL PRODUCTS</h3></a>
+        <Link to="/" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>SHOP ALL PRODUCTS</h3></Link>
         
-        <a href="#" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>HAIR CARE</h3></a>
+        <Link to="/" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>HAIR CARE</h3></Link>
         
-        <a href="#" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>BODY CARE</h3></a>
+        <Link to="/" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>BODY CARE</h3></Link>
         
-        <a href="#" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>IKWI NUTRITION</h3></a>
+        <Link to="/" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>IKWI NUTRITION</h3></Link>
         
-        <a href="#" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>KNOW US BETTER</h3></a>
+        <Link to="/" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>KNOW US BETTER</h3></Link>
         
-        <a href="#" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>PROFILE</h3></a>
+        <Link to="/" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>PROFILE</h3></Link>
         
-        <a href="#" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>LOGIN</h3></a>
+        <Link to="/" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>LOGIN</h3></Link>
 
 
 
@@ -170,7 +171,8 @@ const Navbar = () => {
       </Drawer>
 
       </div>
-     <div><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Group_346.svg?v=1655211633" alt="NotFound" /></div>
+      {/* Tracker icon */}
+      <div> <Link to="/track"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Group_346.svg?v=1655211633" alt="NotFound" /></Link></div>
      {/* LOGIN */}
       <div><i className="fa-solid fa-user"></i></div>
       </div>

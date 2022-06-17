@@ -66,7 +66,7 @@ const Haircare = ({ haircare }) => {
             <br />
             <br />
             <div>
-                <h5>THE SCIENCE BEHIND</h5>
+                <h5 style={{width: '100%',textAlign:"center"}}>THE SCIENCE BEHIND</h5>
                 <h1>Our Formulations</h1>
                 <p>Our Formulations are 90% nature derived, with our focus being the use of scientifically-proven ingredients that ensure promised results.
                 </p>
