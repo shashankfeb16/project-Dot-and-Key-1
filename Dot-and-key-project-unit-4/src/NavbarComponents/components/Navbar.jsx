@@ -62,7 +62,7 @@ const Navbar = () => {
           backgroundColor:"#51514B",
           color:"#fff",
           aspectRatio:"auto",
-          height:"18px"
+          height:"18px",
         }}
       >
         <SwiperSlide style={{fontSize:"12px"}}>3% OFF ON PREPAID ORDERS</SwiperSlide>
@@ -70,8 +70,6 @@ const Navbar = () => {
         <SwiperSlide style={{fontSize:"12px"}}>UPTO 20% OFF SITEWIDE</SwiperSlide>
         <SwiperSlide style={{fontSize:"12px"}}>NEW LAUNCH:20% VITAMIN SERUM</SwiperSlide>
       </Swiper>
-
-
       {/* NAV MENU */}
   <div className={style.nav}>
       <div>
@@ -84,12 +82,14 @@ const Navbar = () => {
           overlay:{
             aspectRatio:"auto",
     // backgroundColor:'grey',
-    margin:"0",
-    marginTop: "150px",
-    height:"40%",
-    width:"100%",
-    boxShadow: "rgba(0, 0, 0, 0.25) 0px 25px 50px -12px",
-    aspectRatio:"auto",
+             margin:"0",
+             marginTop: "150px",
+             height:"40%",
+             width:"100%",
+             boxShadow: "rgba(0, 0, 0, 0.25) 0px 25px 50px -12px",
+             aspectRatio:"auto",
+             zIndex:"12",
+
           }
         }}
         className={styled.modal}>
@@ -170,7 +170,7 @@ const Navbar = () => {
       </Drawer>
 
       </div>
-     
+     <div><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Group_346.svg?v=1655211633" alt="NotFound" /></div>
      {/* LOGIN */}
       <div><i className="fa-solid fa-user"></i></div>
       </div>
