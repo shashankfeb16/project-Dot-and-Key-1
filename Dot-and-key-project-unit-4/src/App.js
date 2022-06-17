@@ -26,6 +26,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 import Homepage from './HomePageComponents/Homepage';
 import Serum from './pages/Serum';
 import Nutri from './pages/Nutrition/Nutri';
+import Moisturizer from './pages/Moisturizer';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
         <Route path='/hair' element={<CartProvider><Haircare haircare={haircare}></Haircare></CartProvider>}></Route>
         <Route path='/nutri' element={<CartProvider><Nutri></Nutri></CartProvider>}></Route>
         <Route path='/serum' element={<CartProvider><Serum></Serum></CartProvider>}></Route>
+        <Route path="/mois" element={<CartProvider><Moisturizer></Moisturizer></CartProvider>}/>
         <Route path='/cart' element={<CartProvider><Cart></Cart></CartProvider>}></Route>
       </Routes>
       <Footer />
