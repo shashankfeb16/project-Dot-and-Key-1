@@ -2,8 +2,8 @@ import React from 'react'
 import { Carousel, Card, Button } from 'react-bootstrap';
 import styles from "../styles/haircare.module.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-import {useCart} from "react-use-cart"
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+import { useCart } from "react-use-cart"
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -13,29 +13,43 @@ import 'swiper/css/scrollbar';
 
 const Haircare = ({ haircare }) => {
 
-    const {addItem} = useCart();
-    const handleRefresh = ()=>{
+    const { addItem } = useCart();
+    const handleRefresh = () => {
         window.location.reload(false)
     }
     return (
         <div>
-            <div>
-                <Carousel>
-                    <Carousel.Item>
+            <div style={{ marginTop: "100px" }} className={styles.bhcarousel1maindiv}>
+                <Swiper
+                    className={styles.bhcarousel1}
+                    spaceBetween={30}
+                    centeredSlides={true}
+                    autoplay={{
+                        delay: 3500,
+                        disableOnInteraction: false,
+                    }}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    navigation={true}
+                    modules={[Autoplay, Pagination, Navigation]}
+                >
+                    <SwiperSlide className={styles.bhcarousel1image}>
                         <img
-                            className="d-block w-100"
+                            style={{ borderRadius: "20px", height: "632px", width: "1520px" }}
                             src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Untitled-1_13.png?v=1647427657"
-                            alt="First slide"
+                            alt="a"
                         />
-                    </Carousel.Item>
-                    <Carousel.Item>
+                    </SwiperSlide>
+                    <SwiperSlide className={styles.bhcarousel1image}>
+                        a
                         <img
-                            className="d-block w-100"
+                            style={{ borderRadius: "20px", height: "632px", width: "1520px" }}
                             src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/1b_2.png?v=1646731308"
-                            alt="Second slide"
+                            alt="b"
                         />
-                    </Carousel.Item>
-                </Carousel>
+                    </SwiperSlide>
+                </Swiper>
             </div>
             <div>
                 <img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/desk_14.png?v=1653897203" alt="" />
@@ -66,7 +80,7 @@ const Haircare = ({ haircare }) => {
             <br />
             <br />
             <div>
-                <h5 style={{width: '100%',textAlign:"center"}}>THE SCIENCE BEHIND</h5>
+                <h5>THE SCIENCE BEHIND</h5>
                 <h1>Our Formulations</h1>
                 <p>Our Formulations are 90% nature derived, with our focus being the use of scientifically-proven ingredients that ensure promised results.
                 </p>
@@ -180,7 +194,7 @@ const Haircare = ({ haircare }) => {
                                 <p>Rs: {hair.price}</p>
                             </Card.Text>
                             <div className="d-grid gap-2">
-                                <Button variant="secondary" size="lg" onClick={()=>{addItem(hair);handleRefresh()}}>Add to Cart</Button>
+                                <Button variant="secondary" size="lg" onClick={() => { addItem(hair); handleRefresh() }}>Add to Cart</Button>
                             </div>
                         </Card.Body>
                     </Card>

@@ -2,37 +2,62 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Carousel, Card, Button } from 'react-bootstrap';
 import styles from "../styles/body.module.css"
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import { Navigation, Pagination, Autoplay } from "swiper";
+
+
 
 
 
 const Body = () => {
     return (
         <div>
-            <div style={{marginTop: "100px"}}>
-                <Carousel>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/shop_all_desk_3_3.png?v=1653457175"
-                            alt="First slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/bodycare_desktop.png?v=1639668460"
-                            alt="Second slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/desk_home_4.png?v=1645176921"
-                            alt="Third slide"
-                        />
-                    </Carousel.Item>
-                </Carousel>
-            </div>
+           <div style={{ marginTop: "100px" }} className={styles.bhcarousel1maindiv}>
+        <Swiper
+          className={styles.bhcarousel1}
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+        >
+          <SwiperSlide className={styles.bhcarousel1image}>
+            <img
+              style={{ borderRadius: "20px" }}
+              src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/shop_all_desk_3_3.png?v=1653457175"
+              alt="a"
+            />
+          </SwiperSlide>
+          <SwiperSlide className={styles.bhcarousel1image}>
+            a
+            <img
+              style={{ borderRadius: "20px" }}
+              src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/bodycare_desktop.png?v=1639668460"
+              alt="b"
+            />
+          </SwiperSlide>
+          <SwiperSlide className={styles.bhcarousel1image}>
+            <img
+              style={{ borderRadius: "20px" }}
+              src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/desk_home_4.png?v=1645176921"
+              alt="c"
+            />
+          </SwiperSlide>
+        </Swiper>
+      </div>
             <br />
             <br />
             <div>
