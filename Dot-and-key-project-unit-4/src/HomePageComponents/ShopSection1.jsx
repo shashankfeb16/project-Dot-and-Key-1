@@ -24,7 +24,7 @@ const ShopSection1 = () => {
 
 
     return (
-        <div>
+        <div  style={{marginTop:"100px"}}>
             <div className={styles.Bhhshopsection1maindiv}>
                 {data.shopsection1.map((d) => (
                     <div key={d.id} className={styles.Bhhshopsection1div}>

@@ -169,7 +169,7 @@ const Form = () => {
                         Return to Cart
                     </div>
                     <div >
-                      <button type='submit' className={styles.btn} onClick={()=>navigate("/payment")}>Continue to shipping</button>
+                      <button type='submit' className={styles.btn}>Continue to shipping</button>
                     </div>
                 </div>
                </form>

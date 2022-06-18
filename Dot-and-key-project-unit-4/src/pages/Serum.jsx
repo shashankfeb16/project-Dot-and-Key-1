@@ -29,7 +29,7 @@ const Serum = () => {
           }}
         >
           {SerumData.map((el) => (
-            <div key={el.id} style={{ height: "440px", width: "282px" }}>
+            <div key={el.id} style={{ height: "440px", width: "282px",marginTop:"40px" }}>
               <div>
                 <img
                   src={el.imageurl}
