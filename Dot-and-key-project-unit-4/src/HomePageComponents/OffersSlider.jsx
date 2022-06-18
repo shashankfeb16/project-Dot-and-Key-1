@@ -11,7 +11,7 @@ import React from "react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper";
+import { Pagination, Scrollbar } from "swiper";
 
 import styles from "./styles/styles.offerslider.module.css";
 
@@ -25,10 +25,10 @@ export  const OffersSlider= () => {
     <div className={styles.bhoffermaindiv}>
     <Swiper className={styles.bhofferitems}
        spaceBetween={30}
-       pagination={{
-         clickable: true,
-       }}
-       modules={[Pagination]}
+       scrollbar={{
+        hide: true,
+      }}
+      modules={[Scrollbar]}
       
      >
 {data.Offersslider.map((d)=>(

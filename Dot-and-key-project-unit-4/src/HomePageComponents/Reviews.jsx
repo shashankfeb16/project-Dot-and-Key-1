@@ -30,7 +30,7 @@ export const Reviews=() => {
       type: "fraction",
     }}
     navigation={true}
-    modules={[Zoom,Pagination, Navigation]}
+    modules={[Zoom, Navigation]}
     >
         
       {data.reviews.map((d)=>(

@@ -94,7 +94,7 @@ const Haircare = ({ haircare }) => {
             </div>
             <div>
                 <Swiper
-                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    modules={[Navigation, Scrollbar, A11y]}
                     spaceBetween={30}
                     slidesPerView={4}
                     navigation

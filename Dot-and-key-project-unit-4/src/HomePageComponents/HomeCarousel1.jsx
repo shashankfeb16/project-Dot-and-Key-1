@@ -33,7 +33,7 @@ pagination={{
   clickable: true,
 }}
 navigation={true}
-modules={[Autoplay, Pagination, Navigation]}
+modules={[Autoplay, Navigation]}
 >
     {data.homecarousel1.map((d)=>(
         <SwiperSlide className={styles.bhcarousel1image}><img src={d} alt="" /></SwiperSlide>

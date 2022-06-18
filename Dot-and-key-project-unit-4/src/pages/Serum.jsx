@@ -34,7 +34,7 @@ const Serum = () => {
                 <img
                   src={el.imageurl}
                   alt="abc"
-                  style={{ width: "282px", height: "282px" }}
+                  style={{ width: "282px", height: "282px"}}
                 />
               </div>
               <div>
@@ -42,7 +42,7 @@ const Serum = () => {
                   style={{ display: "flex", justifyContent: "space-between" }}
                 >
                   <div style={{ display: "flex", alignItems: "center" }}>
-                    <span>
+                    <span style={{display: "flex"}}>
                       <AiFillStar />
                       <AiFillStar />
                       <AiFillStar />

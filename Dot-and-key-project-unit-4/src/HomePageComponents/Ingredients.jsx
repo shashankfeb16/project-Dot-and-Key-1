@@ -24,12 +24,13 @@ export const Ingredients =() => {
     onSwiper={setSwiperRef}
     zoom={true}
     slidesPerView={3}
-   spaceBetween={20}
+   spaceBetween={-610}
     pagination={{
       type: "fraction",
     }}
     navigation={true}
-    modules={[Zoom,Pagination, Navigation]}
+    modules={[Zoom,Navigation]}
+    style={{width: '100%',}}
     >
       {data.ingredients.map((d)=>(
         <SwiperSlide className={styles.bhingredientsimage}><img src={d} alt="" /></SwiperSlide>

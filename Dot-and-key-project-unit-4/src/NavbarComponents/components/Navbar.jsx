@@ -99,29 +99,29 @@ const Navbar = () => {
         className={styled.modal}>
        <div style={{overflowY: 'scroll',paddingLeft:"35px",fontSize:"18px"}}>
       
-       <a href="#" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>WHAT'S NEW</h3></a>
+       <Link to="/" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>WHAT'S NEW</h3></Link>
 
-        <a href="#" style={{textDecoration: "none",color:"#DD73A2"}}><h3 style={{fontWeight:"400"}}>TOP SUMMER PICKS</h3></a>
+        <Link to="/body" style={{textDecoration: "none",color:"#DD73A2"}}><h3 style={{fontWeight:"400"}}>TOP SUMMER PICKS</h3></Link>
         
-        <a href="#" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>BEST SELLERS</h3></a>
+        <Link to="/body" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>BEST SELLERS</h3></Link>
         
-        <a href="#" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>SHOP BY INGREDIENTS</h3></a>
+        <Link to="/serum" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>SHOP BY INGREDIENTS</h3></Link>
         
-        <a href="#" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>SHOP BY CONCERN</h3></a>
+        <Link to="/nutri" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>SHOP BY CONCERN</h3></Link>
 
-        <a href="#" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>SHOP ALL PRODUCTS</h3></a>
+        <Link to="/" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>SHOP ALL PRODUCTS</h3></Link>
         
-        <a href="#" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>HAIR CARE</h3></a>
+        <Link to="/hair" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>HAIR CARE</h3></Link>
         
-        <a href="#" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>BODY CARE</h3></a>
+        <Link to="/body" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>BODY CARE</h3></Link>
         
-        <a href="#" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>IKWI NUTRITION</h3></a>
+        <Link to="/nutri" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>IKWI NUTRITION</h3></Link>
         
-        <a href="#" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>KNOW US BETTER</h3></a>
+        <Link to="/about" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>KNOW US BETTER</h3></Link>
         
-        <a href="#" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>PROFILE</h3></a>
+        <Link to="/signup" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>PROFILE</h3></Link>
         
-        <a href="#" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>LOGIN</h3></a>
+        <Link to="/login" style={{textDecoration: "none",color:"black"}}><h3 style={{fontWeight:"400"}}>LOGIN</h3></Link>
 
 
 
@@ -136,7 +136,7 @@ const Navbar = () => {
       {/* LOGO */}
       <div>
       <div onClick={()=>navigate("/")}><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/unnamed_250x_200x_2x_260x_24408e11-6e3a-4a0c-8327-74d0455f7696_260x.jpg?v=1646547348" 
-      alt="Not Found!"/></div>
+      alt="Not Found!" style={{cursor:"pointer"}}/></div>
       {/* SEARCH BAR */}
       <div><i className="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search...." /></div>
      
@@ -175,6 +175,9 @@ const Navbar = () => {
       </Drawer>
 
       </div>
+     
+     {/* Tracker */}
+     <div> <Link to="/track"><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/Group_346.svg?v=1655211633" alt="NotFound" /></Link></div>
      
      {/* LOGIN */}
       <div><Link to="/login"><i className="fa-solid fa-user"></i></Link></div>

@@ -50,7 +50,7 @@
 
 }
 .nav>div>div:nth-child(2)>div:nth-child(2)>input{
-    width: 240px;
+    width: 180px;
     height: 20px;
     border: none;
     border-bottom: 1px solid grey; 
@@ -64,6 +64,7 @@
     font-size: 25px;
     cursor: pointer;
     aspect-ratio: auto;
+    margin-left: 15px;
 
 
 }
@@ -72,7 +73,15 @@
     font-size: 25px;
     cursor: pointer;
     aspect-ratio: auto;
+    margin-left: 15px;
 
 }
+.nav>div>div:nth-child(2)>div:nth-child(5){
+    margin-top: 29px;
+    font-size: 25px;
+    margin-left: 15px;
+    cursor: pointer;
+    aspect-ratio: auto;
 
+}
 

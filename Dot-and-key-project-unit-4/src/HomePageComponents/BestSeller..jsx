@@ -39,7 +39,7 @@ export const BestSeller = () => {
             type: "fraction",
           }}
           navigation={true}
-          modules={[Pagination, Navigation]}
+          modules={[Navigation]}
         >
           {data.bestseller.map((d) => (
             <SwiperSlide key={d.id}>

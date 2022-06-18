@@ -33,7 +33,7 @@ const SkincareJournal = () => {
           clickable: true,
         }}
         navigation={true}
-        modules={[Keyboard, Pagination, Navigation]}
+        modules={[Keyboard,Navigation]}
         className="mySwiper"
       >
         <SwiperSlide><img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/ezgif.com-gif-maker_ff4dc633-9c9a-40b1-810f-2614147ac68d_540x.gif?v=1615273304" alt="" /></SwiperSlide>

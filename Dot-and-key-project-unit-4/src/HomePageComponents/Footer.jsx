@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles/styles.footer.module.css";
-
+import {Link} from "react-router-dom"
 const Footer = () => {
   return (
     <div>
@@ -11,8 +11,8 @@ const Footer = () => {
         <div>
             <h3>GET TO KNOW US</h3>
           </div>
-          <div>ABOUT US</div>
-          <div>CONTACT US</div>
+          <div><Link to="/about">ABOUT US</Link></div>
+          <div><Link to="/contact">CONTACT US</Link></div>
           <div>EARTH CARE</div>
           <div>AFFILATE PROGRAM</div>
           <div>TERMS & CONDITION </div>

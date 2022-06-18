@@ -19,6 +19,8 @@ import Payment from './pages/Payment';
 import Order from './pages/Order';
 import Login from "./LoginPageComponents/Login"
 import SignUp from "./LoginPageComponents/SignUp"
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 
 function App() {
@@ -40,9 +42,13 @@ function App() {
         <Route path='/checkout' element={<CartProvider><Form></Form></CartProvider>}></Route>
         <Route path='/payment' element={<CartProvider><Payment></Payment></CartProvider>}></Route>
         <Route path='/order' element={<Order></Order>}></Route>
+        <Route path="/about" element={<About></About>}></Route>
+        <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path='/cart' element={<CartProvider><Cart></Cart></CartProvider>}></Route>
       </Routes>
       <Footer />
+      
+      
     </div>
   );
 }

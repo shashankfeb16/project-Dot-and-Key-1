@@ -32,7 +32,7 @@ export const NewArrival=() => {
       type: "fraction",
     }}
     navigation={true}
-    modules={[Pagination, Navigation]}
+    modules={[Navigation]}
     >
 
       {data.newarrivals.map((d)=>(

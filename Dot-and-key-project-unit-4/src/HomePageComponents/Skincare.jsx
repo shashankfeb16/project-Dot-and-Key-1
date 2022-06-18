@@ -24,12 +24,13 @@ export const Skincare=() => {
     onSwiper={setSwiperRef}
     zoom={true}
     slidesPerView={3}
-   spaceBetween={30}
+   spaceBetween={-310}
     pagination={{
       type: "fraction",
     }}
     navigation={true}
-    modules={[Zoom,Pagination, Navigation]}
+    modules={[Zoom, Navigation]}
+    style={{width: '100%',}}
     >
       {data.skincare.map((d)=>(
         <SwiperSlide className={styles.bhskincareimage}><img src={d} alt="" /></SwiperSlide>
