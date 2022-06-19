@@ -104,7 +104,9 @@
   .merge{
     display: flex;
   }
-
+ .merge>div{
+  display: flex;
+ }
 
   .blue{
     color: blue;

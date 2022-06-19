@@ -46,6 +46,8 @@ function App() {
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path='/cart' element={<CartProvider><Cart></Cart></CartProvider>}></Route>
       </Routes>
+
+      
       <Footer />
       
       

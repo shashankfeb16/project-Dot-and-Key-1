@@ -36,15 +36,15 @@ const About = () => {
             <div>
                 <h3>WE KNOW WHEN TO SAY NO</h3>
                 <p>Our products are completely free of nasty, and we only use IFRA certified fragrances and essential oils. We say NO to all the following ingredients :</p><br/><br/><br/><br/><br/><br/><br/><br/>
-                <h4>- Parabens (methyl, propyl, etc.)</h4>
-                <h4>- Sulphates (SLS, SLES)</h4>
-                <h4>- Alcohol (Ethanol)</h4>
-                <h4>- PABA</h4>
-                <h4>- Phthalates</h4>
-                <h4>- Triclosan</h4>
-                <h4>- Formaldehyde Donors</h4>
-                <h4>- Heavy metals</h4>
-                <h4>- Synthetic Dyes</h4>
+                <h3>- Parabens (methyl, propyl, etc.)</h3>
+                <h3>- Sulphates (SLS, SLES)</h3>
+                <h3>- Alcohol (Ethanol)</h3>
+                <h3>- PABA</h3>
+                <h3>- Phthalates</h3>
+                <h3>- Triclosan</h3>
+                <h3>- Formaldehyde Donors</h3>
+                <h3>- Heavy metals</h3>
+                <h3>- Synthetic Dyes</h3>
             </div>
         </div>
         <div className="promises">
@@ -53,42 +53,42 @@ const About = () => {
                 <div>
                         <Img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/t/564/assets/crnf.jpg?v=144518637420478652841655581657" alt="Not Found!" />
                         <div>
-                            <h4>CONSUMER RESEARCH & NEED FULFILMENT</h4>
+                            <h3>CONSUMER RESEARCH & NEED FULFILMENT</h3>
                             <p>We always have our ear to the ground listening to consumer needs, and feed that to our team of skilled chemists who then work on new product ideas, new solutions, research on blends, cutting edge technology and creating prototypes.  </p>
                         </div>
                 </div>
                 <div>
                 <Img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/t/564/assets/Testing-validation.jpg?v=96291345747492281441655581657" alt="Not Found!" />
                     <div>
-                        <h4>TESTING & VALIDATION</h4>
+                        <h3>TESTING & VALIDATION</h3>
                         <p>We’re unaffected by trends because we launch new products only in response to genuine unaddressed needs expressed by our customers. And only after extensive research, do we deliver formulations of the highest quality and safety. All our products released only after a high performance grading standard is met.  </p>
                     </div>
                 </div>
                 <div>
                 <Img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/t/564/assets/ima.jpg?v=93715680922064519971655581657" alt="Not Found!" />
                     <div>
-                        <h4>INGREDIENT & MATERIAL ASSESSMENT</h4>
+                        <h3>INGREDIENT & MATERIAL ASSESSMENT</h3>
                         <p>We like to be ahead of the curve, both in the technology we use and the science we incorporate. Our ingredients are sourced from the most reputed suppliers with all the necessary compliances verified and checked. As a result, our products promise to always be innovative, gentle-to-use and have the lowest impact on the environment.</p>
                     </div>
                 </div>
                 <div>
                 <Img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/t/564/assets/Label-transparency.jpg?v=43075071097887518831655581657g" alt="Not Found!" />
                     <div>
-                        <h4>LABEL TRANSPARENCY</h4>
+                        <h3>LABEL TRANSPARENCY</h3>
                         <p>We believe you have a right to know what goes into your products. We list our ingredients clearly and consistently according to established standards. Our products are dermatologically tested to be 100% safe on skin, and are safe to life. We carefully formulate each of our products with “The Good Stuff” using as much from nature as possible.   </p>
                     </div>
                 </div>
                 <div>
                 <Img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/t/564/assets/Production.jpg?v=103117539792042279541655581657" alt="Not Found!" />
                     <div>
-                        <h4>PRODUCTION</h4>
+                        <h3>PRODUCTION</h3>
                         <p>We choose to work with our supply-chain & manufacturing partners after a thorough study of their quality standards and consistency. We evaluate based on compliance with our environment, technological, sanitisation and ethical standards.   </p>
                     </div>
                 </div>
                 <div>
                 <Img src="https://cdn.shopify.com/s/files/1/0361/8553/8692/t/564/assets/Packaging.jpg?v=134638703072571645821655581657"  alt="Not Found!"/>
                     <div>
-                        <h4>PACKAGING</h4>
+                        <h3>PACKAGING</h3>
                         <p>Making everyday beautiful matters to us; we design to inspire little joys. However, our packaging development isn’t just pretty to look at. We are mindful of its composition as well, focusing on inks and materials that are environmentally responsible and eliminating materials of concern. </p>
                     </div>
                 </div>
